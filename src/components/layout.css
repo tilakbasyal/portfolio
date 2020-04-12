@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Nunito";
+  src: url('../fonts/nunito-v12-latin-600.woff');
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
