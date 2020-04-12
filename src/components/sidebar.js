@@ -29,6 +29,9 @@ const styles = {
   line: {
     border: '1px solid #dedede',
     margin: '25vh 2rem'
+  },
+  active: {
+    borderBottom: '4px solid green'
   }
 }
 
@@ -39,6 +42,7 @@ export default function Sidebar() {
         {pages.map(singlePageLink => (<Link
             key={singlePageLink.name}
             to={singlePageLink.path}
+            activeStyle={styles.active}
             style={styles.link}
           >
             {singlePageLink.name}

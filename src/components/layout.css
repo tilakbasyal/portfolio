@@ -46,6 +46,7 @@ template {
 }
 a {
   background-color: transparent;
+  border-bottom: 4px solid #fff;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
