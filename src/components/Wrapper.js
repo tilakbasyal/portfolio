@@ -2,17 +2,18 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const styles = {
+const styles = (width) => {return {
   root: {
     display: 'grid',
-    gridTemplateColumns: "minmax(210px, 30%) auto 1fr",
+    gridTemplateColumns: width > 768 && "minmax(210px, 30%) auto 1fr",
     // placeItems: 'center'
   }
+}
 }
 
 const Wrapper = ({children}) => {
   return (
-    <div style={styles.root}>
+    <div style={styles(window.screen.width).root}>
       {children}
     </div>
   )

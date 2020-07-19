@@ -50,7 +50,7 @@ export default function Works() {
         <SidebarContent>
           <div style={{display: 'flex'}}>
             {projects.map(({icon,href,name}) => (
-              <SingleColumnContent icon={icon} link={href} name={name} />
+              <SingleColumnContent key={name} icon={icon} link={href} name={name} />
             ))}
           </div>
         </SidebarContent>

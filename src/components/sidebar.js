@@ -8,9 +8,9 @@ const pages = [
   { path: '/contact/', name: 'FOR YOU'}
 ]
 
-const styles = {
+const styles = (width) => {return {
   linkParent: {
-    display: 'flex',
+    display: width > 768 ? 'flex' : 'none',
     flexDirection: 'column',
     justifyContent: 'center',
     height: '100vh',
@@ -28,28 +28,29 @@ const styles = {
     lineHeight: 1
   },
   line: {
+    display: width > 768 ? 'flex' : 'none',
     border: '1px solid #dedede',
     margin: '25vh 0'
   },
   active: {
     borderBottom: '4px solid green'
   }
-}
+}}
 
 export default function Sidebar() {
   return (
     <React.Fragment>
-      <div style={styles.linkParent}>
+      <div style={styles(window.screen.width).linkParent}>
         {pages.map(singlePageLink => (<Link
             key={singlePageLink.name}
             to={singlePageLink.path}
-            activeStyle={styles.active}
-            style={styles.link}
+            activeStyle={styles().active}
+            style={styles().link}
           >
             {singlePageLink.name}
           </Link>))}
       </div>
-      <div id='line' style={styles.line}></div>
+      <div id='line' style={styles(window.screen.width).line}></div>
     </React.Fragment>
   )
 }
