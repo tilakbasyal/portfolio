@@ -13,7 +13,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    height: '100vh'
+    height: '100vh',
+    margin: '0 24px'
   },
   link: {
     display: 'flex',
@@ -28,7 +29,7 @@ const styles = {
   },
   line: {
     border: '1px solid #dedede',
-    margin: '25vh 2rem'
+    margin: '25vh 0'
   },
   active: {
     borderBottom: '4px solid green'

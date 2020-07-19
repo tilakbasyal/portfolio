@@ -5,24 +5,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Sidebar from "../components/sidebar"
 import SidebarContent from "../components/pageContent";
-
-const styles = {
-  root: {
-    display: 'flex'
-  }
-}
+import Wrapper from '../components/Wrapper';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={styles.root}>
+    <Wrapper>
       <Sidebar />
       <SidebarContent>
         <h1>Hello, I am Tilak Basyal.</h1>
         <p>Currently working at Zegal, as a frontend Developer.</p>
         <p>Previously worked at Inspiring Lab Pvt. Ltd., as frontend Developer.</p>
       </SidebarContent>
-    </div>
+    </Wrapper>
 
 
     {/* <h1>Hi people</h1>

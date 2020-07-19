@@ -3,13 +3,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Sidebar from '../components/sidebar'
 import SidebarContent from '../components/pageContent'
+import Wrapper from '../components/Wrapper';
 
 import TotalIcon from '../images/totalLogistics.png';
 import RatnaNagar from '../images/ratnanagar.png';
 
 const projects = [
   {icon: TotalIcon, href: 'https://totallogistic.com.np/', name: 'Total Logistics'},
-  {icon: RatnaNagar, href: 'http://badapatra.karmaconsult.com.np/', name: 'Digital Information Board'}
+  {icon: RatnaNagar, href: 'http://badapatra.karmaconsult.com.np/', name: 'Digital Information Board'},
 ]
 
 const SingleColumnContent = ({icon, link, name}) => {
@@ -28,7 +29,8 @@ const SingleColumnContent = ({icon, link, name}) => {
     link: {
       textDecoration: 'none',
       textAlign: 'center',
-      color: 'black'
+      color: 'black',
+      margin: '0 24px 24px 0'
     }
   }
   return (
@@ -43,14 +45,16 @@ export default function Works() {
   return (
     <Layout>
       <SEO title="Works" />
-      <div style={{display: 'flex'}}>
+      <Wrapper>
         <Sidebar />
         <SidebarContent>
-          {projects.map(({icon,href,name}) => (
-            <SingleColumnContent icon={icon} link={href} name={name} />
-          ))}
+          <div style={{display: 'flex'}}>
+            {projects.map(({icon,href,name}) => (
+              <SingleColumnContent icon={icon} link={href} name={name} />
+            ))}
+          </div>
         </SidebarContent>
-      </div>
+      </Wrapper>
     </Layout>
   )
 }

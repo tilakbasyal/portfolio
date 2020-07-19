@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Sidebar from '../components/sidebar';
 import SidebarContent from '../components/pageContent';
+import Wrapper from '../components/Wrapper';
 
 
 
@@ -10,7 +11,7 @@ export default function About() {
   return (
     <Layout>
       <SEO title="About" />
-      <div style={{display: 'flex'}}>
+      <Wrapper>
         <Sidebar />
 
         <SidebarContent>
@@ -19,12 +20,12 @@ export default function About() {
             <li>CSS</li>
             <li>JavaScript</li>
             <li>React Js</li>
-            <li>Redux</li>
-            <li>MobX</li>
+            <li>Redux, MobX</li>
+            <li>Bootstrap, Bulma, Material UI, Materialize</li>
             <li>And play a bit with Figma...</li>
           </ul>
         </SidebarContent>
-      </div>
+      </Wrapper>
     </Layout>
   )
 }

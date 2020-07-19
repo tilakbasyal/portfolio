@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Sidebar from '../components/sidebar';
 import SidebarContent from '../components/pageContent';
+import Wrapper from '../components/Wrapper';
+
 
 import { FaFacebook, FaTwitterSquare, FaLinkedin, FaGithub} from 'react-icons/fa';
 
@@ -23,7 +25,7 @@ export default function Contact() {
   return (
     <Layout>
       <SEO title="Contact" />
-      <div style={{display: 'flex', fontFamily: 'Nunito'}}>
+      <Wrapper>
         <Sidebar />
         <SidebarContent>
           <p>Contact Me...</p>
@@ -35,7 +37,7 @@ export default function Contact() {
            ))}
           </div>
         </SidebarContent>
-      </div>
+      </Wrapper>
     </Layout>
   )
 }

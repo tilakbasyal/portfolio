@@ -5,7 +5,8 @@ const styles = {
   pageContent: {
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  margin: '0 24px'
 }
 }
 
