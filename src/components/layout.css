@@ -53,6 +53,15 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+
+a img {
+  filter: grayscale(100%);
+}
+
+a img:hover {
+  filter: grayscale(0);
+}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

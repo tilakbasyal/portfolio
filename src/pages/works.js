@@ -10,7 +10,7 @@ export default function About() {
   return (
     <Layout>
       <SEO title="About" />
-      <div style={{display: 'flex', fontFamily: 'Nunito'}}>
+      <div style={{display: 'flex'}}>
         <Sidebar />
 
         <SidebarContent>

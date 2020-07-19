@@ -4,17 +4,37 @@ import SEO from "../components/seo"
 import Sidebar from '../components/sidebar'
 import SidebarContent from '../components/pageContent'
 
-import TotalIcon from '../images/test.png';
+import TotalIcon from '../images/totalLogistics.png';
+import RatnaNagar from '../images/ratnanagar.png';
 
 const projects = [
-  {icon: TotalIcon, href: 'https://totallogistic.com.np/'},
-  // {icon: TotalIcon, href: 'https://totallogistic.com.np/'}
+  {icon: TotalIcon, href: 'https://totallogistic.com.np/', name: 'Total Logistics'},
+  {icon: RatnaNagar, href: 'http://badapatra.karmaconsult.com.np/', name: 'Digital Information Board'}
 ]
 
-const SingleColumnContent = ({icon, link}) => {
+const SingleColumnContent = ({icon, link, name}) => {
+  const styles = {
+    imgstyle: {
+      height: '180px',
+      width: '290px',
+      objectFit: 'cover',
+
+      //how to do this here and not in css
+      // filter: 'grayscale(100%)',
+      // '&::hover': {
+      //   filter: 'grayscale(0)'
+      // }
+    },
+    link: {
+      textDecoration: 'none',
+      textAlign: 'center',
+      color: 'black'
+    }
+  }
   return (
-    <a href={link} target='_blank' rel="noopener noreferrer">
-      <img src={icon}  alt='Logo'/>
+    <a href={link} style={styles.link} target='_blank' rel="noopener noreferrer">
+      <img style={styles.imgstyle} src={icon}  alt='Logo'/>
+      <p>{name}</p>
     </a>
   );
 }
@@ -26,8 +46,8 @@ export default function Works() {
       <div style={{display: 'flex'}}>
         <Sidebar />
         <SidebarContent>
-          {projects.map(({icon,href}) => (
-            <SingleColumnContent icon={icon} link={href} />
+          {projects.map(({icon,href,name}) => (
+            <SingleColumnContent icon={icon} link={href} name={name} />
           ))}
         </SidebarContent>
       </div>
