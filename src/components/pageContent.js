@@ -12,6 +12,7 @@ const styles = {
 threeDots: {
   padding: '24px 0',
   margin: '0 -24px',
+  marginBottom: '24px',
   boxShadow: '0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)'
 }
 }
@@ -23,7 +24,14 @@ const ThreeDots = () => {
   }
   return (
   <div style={styles.threeDots}>
-    <div style={{fontSize: '2rem', float: 'right', marginRight: '18px'}} onClick={handleClick} id='hamburgerAnchor'>
+    <div
+      style={{fontSize: '2rem', float: 'right', marginRight: '18px'}}
+      role="button"
+      tabIndex={0}
+      onClick={handleClick}
+      onKeyDown={handleClick}
+      id='hamburgerAnchor'
+    >
       <FaBars />
     </div>
   </div>
