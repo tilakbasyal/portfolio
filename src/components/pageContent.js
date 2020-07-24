@@ -19,9 +19,7 @@ threeDots: {
 
 const ThreeDots = (props) => {
   const handleClick = () => {
-    console.log('Hello hwllo hlll', document.getElementById("hamburgerAnchor"))
     props.toggleOpen();
-    // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
   }
   return (
   <div style={styles.threeDots}>
