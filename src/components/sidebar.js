@@ -38,9 +38,16 @@ const styles = (width) => {return {
 }}
 
 export default function Sidebar() {
+
+  const [screenWidth, setScreenWidth] = React.useState(0);
+
+  React.useEffect(() => {
+    setScreenWidth(window.screen.width)
+  }, [screenWidth])
+
   return (
     <React.Fragment>
-      <div style={styles(window.screen.width).linkParent}>
+      <div style={styles(screenWidth).linkParent}>
         {pages.map(singlePageLink => (<Link
             key={singlePageLink.name}
             to={singlePageLink.path}
@@ -50,7 +57,7 @@ export default function Sidebar() {
             {singlePageLink.name}
           </Link>))}
       </div>
-      <div id='line' style={styles(window.screen.width).line}></div>
+      <div id='line' style={styles(screenWidth).line}></div>
     </React.Fragment>
   )
 }

@@ -12,8 +12,14 @@ const styles = (width) => {return {
 }
 
 const Wrapper = ({children}) => {
+  const [screenWidth, setScreenWidth] = React.useState(0);
+
+  React.useEffect(() => {
+    setScreenWidth(window.screen.width)
+  }, [screenWidth])
+
   return (
-    <div style={styles(window.screen.width).root}>
+    <div style={styles(screenWidth).root}>
       {children}
     </div>
   )

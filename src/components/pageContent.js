@@ -37,8 +37,13 @@ const ThreeDots = (props) => {
 )}
 
 const SidebarContent = ({children}) => {
-  const screenWidth = window.screen.width;
   const [open, setOpen] = React.useState(false);
+
+  const [screenWidth, setScreenWidth] = React.useState(0);
+
+  React.useEffect(() => {
+    setScreenWidth(window.screen.width)
+  }, [screenWidth])
 
   const handleToggle = () => {
     setOpen(!open);
