@@ -39,7 +39,7 @@ const styles = (width) => {return {
 
 export default function Sidebar() {
 
-  const [screenWidth, setScreenWidth] = React.useState(0);
+  const [screenWidth, setScreenWidth] = React.useState(1024);
 
   React.useEffect(() => {
     setScreenWidth(window.screen.width)

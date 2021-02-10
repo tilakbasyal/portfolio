@@ -2,9 +2,20 @@ module.exports = {
   siteMetadata: {
     title: `Tilak Basyal`,
     description: `This is the personal website of Tilak Basyal.`,
-    author: `@basyaltilak143@gmail.com`,
+    author: `Tilak Basyal`,
+    twitterUsername: '@addictstupid',
+    url: 'https://tilakbasyal.com.np'
   },
   plugins: [
+      {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GATSBY_GOOGLE_TRACKING_ID,
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
