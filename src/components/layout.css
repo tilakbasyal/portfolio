@@ -635,10 +635,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
-.root {
-  display: grid;
-  @media screen and (max-width: 768px) {
-    gridTemplateColumns: "minmax(210px, 30%) auto 1fr"
-  }
-}
