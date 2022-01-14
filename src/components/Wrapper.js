@@ -1,32 +1,14 @@
 // this is the main wrapper for whole webpage.
-import React from 'react';
-import PropTypes from "prop-types";
+import React from "react"
+import PropTypes from "prop-types"
+import * as wrapperStyles from "./Wrapper.module.css"
 
-const styles = (width) => {return {
-  root: {
-    display: 'grid',
-    gridTemplateColumns: width > 768 && "minmax(210px, 30%) auto 1fr",
-    // placeItems: 'center'
-  }
+const Wrapper = ({ children }) => {
+  return <div className={wrapperStyles.root}>{children}</div>
 }
-}
-
-const Wrapper = ({children}) => {
-  const [screenWidth, setScreenWidth] = React.useState(1024);
-
-  React.useEffect(() => {
-    setScreenWidth(window.screen.width)
-  }, [screenWidth])
-
-  return (
-    <div style={styles(screenWidth).root}>
-      {children}
-    </div>
-  )
-};
 
 Wrapper.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
-export default Wrapper;
+export default Wrapper

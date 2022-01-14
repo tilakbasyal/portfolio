@@ -1,0 +1,39 @@
+.linkParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 24px;
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  padding: 16px 0;
+  margin: 8px 0;
+  font-family: Nunito;
+  font-size: 48px;
+  max-width: 250px;
+  line-height: 1;
+}
+
+.line {
+  display: flex;
+  border: 1px solid #dedede;
+  margin: 25vh 0;
+}
+
+.active {
+  border-bottom: 4px solid green;
+}
+
+@media screen and (max-width: 767px) {
+  .linkParent {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+}
