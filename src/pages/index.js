@@ -14,9 +14,15 @@ const IndexPage = () => (
       <Sidebar />
       <SidebarContent>
         <h1>Hello, I am Tilak Basyal.</h1>
-        <p>Currently at WAFT Technology</p>
+        <p>Currently at Logpoint Nepal Pvt. Ltd. as a Software Engineer.</p>
         <p>
-          Moved at Zegal, as a frontend Developer.
+          Worked at WAFT Technology for <a href='https://enabley.io/'>Enabley</a> as a frontend Developer from
+          <span style={{ display: "inline-block" }}>
+            (August 2021 - January 2022)
+          </span>
+        </p>
+        <p>
+          Moved Zegal, as a frontend Developer.
           <span style={{ display: "inline-block" }}>
             (January 2020 - August 2021)
           </span>
@@ -24,7 +30,7 @@ const IndexPage = () => (
         <p>
           Stared working from Inspiring Lab Pvt. Ltd., as frontend Developer.
           <span style={{ display: "inline-block" }}>
-            (March 2018 - December 2019)
+            (June 2018 - December 2019)
           </span>
         </p>
       </SidebarContent>
