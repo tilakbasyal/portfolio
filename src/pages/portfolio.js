@@ -36,7 +36,7 @@ const SingleColumnContent = ({icon, link, name}) => {
     }
   }
   return (
-    <a href='#' style={styles.link} rel="noopener noreferrer">
+    <a href={link} style={styles.link} rel="noopener noreferrer">
       <img style={styles.imgstyle} src={icon}  alt='Logo'/>
       <p>{name}</p>
     </a>
