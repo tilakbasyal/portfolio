@@ -32,7 +32,7 @@ const SingleColumnContent = ({icon, link, name}) => {
       textDecoration: 'none',
       textAlign: 'center',
       color: 'black',
-      margin: '0 24px 24px 0'
+      // margin: '0 24px 24px 0'
     }
   }
   return (
@@ -50,7 +50,7 @@ export default function Works() {
       <Wrapper>
         <Sidebar />
         <SidebarContent>
-          <div style={{display: 'flex'}}>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px'}}>
             {projects.map(({icon,href,name}) => (
               <SingleColumnContent key={name} icon={icon} link={href} name={name} />
             ))}
