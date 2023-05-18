@@ -7,10 +7,12 @@ import Wrapper from '../components/Wrapper';
 
 import TotalIcon from '../images/totalLogistics.png';
 import RatnaNagar from '../images/ratnanagar.png';
+import AmyStudio from '../images/amy-studios.png';
 
 const projects = [
   {icon: TotalIcon, href: 'https://totallogistic.com.np/', name: 'Total Logistics'},
-  {icon: RatnaNagar, href: 'http://badapatra.karmaconsult.com.np/', name: 'Digital Information Board'},
+  {icon: RatnaNagar, href: '#', name: 'Digital Information Board'},
+  {icon: AmyStudio, href: 'https://amystudiosnepal.com/', name: 'Amy Studios'},
 ]
 
 const SingleColumnContent = ({icon, link, name}) => {
