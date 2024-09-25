@@ -14,8 +14,8 @@ const IndexPage = () => (
       <Sidebar />
       <SidebarContent>
         <h1>Hello, I am Tilak Basyal.</h1>
-        <a href="/images/CV.pdf" download>
-          <img src="/images/resume.png" alt="cv-image" width="104" height="142" />
+        <a href="../images/CV.pdf" download>
+          <img src="../images/resume.png" alt="cv-image" width="104" height="142" />
         </a>
 
         <p>Currently pursuing my Master degree in Cyber Security at Aalborg University, Copenhagen.</p>
