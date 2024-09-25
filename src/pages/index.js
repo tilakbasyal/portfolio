@@ -7,6 +7,8 @@ import Sidebar from "../components/sidebar"
 import SidebarContent from "../components/pageContent"
 import Wrapper from "../components/Wrapper"
 
+import ResumeImage from '../images/resume.png';
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -14,9 +16,6 @@ const IndexPage = () => (
       <Sidebar />
       <SidebarContent>
         <h1>Hello, I am Tilak Basyal.</h1>
-        <a href="../images/CV.pdf" download>
-          <img src="../images/resume.png" alt="cv-image" width="104" height="142" />
-        </a>
 
         <p>Currently pursuing my Master degree in Cyber Security at Aalborg University, Copenhagen.</p>
 
