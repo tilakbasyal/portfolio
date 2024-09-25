@@ -14,15 +14,15 @@ const IndexPage = () => (
       <Sidebar />
       <SidebarContent>
         <h1>Hello, I am Tilak Basyal.</h1>
-        <a href="../images/CV.pdf" download>
-          <img src="../images/resume.png" alt="cv-image" width="104" height="142" />
+        <a href="/images/CV.pdf" download>
+          <img src="/images/resume.png" alt="cv-image" width="104" height="142" />
         </a>
 
         <p>Currently pursuing my Master degree in Cyber Security at Aalborg University, Copenhagen.</p>
 
         <p> Worked at Logpoint Nepal Pvt. Ltd. as a Software Engineer.
         <span style={{ display: "inline-block" }}>
-            (August 2021 - January 2022)
+            (February 2022 - August 2024)
           </span>
         </p>
 
