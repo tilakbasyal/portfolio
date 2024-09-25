@@ -8,9 +8,11 @@ import Wrapper from '../components/Wrapper';
 import TotalIcon from '../images/totalLogistics.png';
 import RatnaNagar from '../images/ratnanagar.png';
 import AmyStudio from '../images/amy-studios.png';
+import MetroMortgage from '../images/Metro-mortgage.png'
 
 const projects = [
   {icon: TotalIcon, href: 'https://totallogistic.com.np/', name: 'Total Logistics'},
+  {icon: MetroMortgage, href: 'https://metromtgllc.com/', name: 'Metro Mortgage'},
   {icon: RatnaNagar, href: '#', name: 'Digital Information Board'},
   {icon: AmyStudio, href: 'https://amystudiosnepal.com/', name: 'Amy Studios'},
 ]

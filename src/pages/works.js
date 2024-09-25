@@ -17,11 +17,13 @@ export default function About() {
         <SidebarContent>
           <ul style={{fontFamily: 'inherit'}}>
             <li>HTML</li>
-            <li>CSS</li>
+            <li>CSS / SCSS / SASS / Styled Components / JSS</li>
             <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>React Js</li>
-            <li>Redux, MobX</li>
-            <li>Bootstrap, Bulma, Material UI, Materialize</li>
+            <li>Redux, MobX and whateever the state management</li>
+            <li>Scripting</li>
+            <li>Ant Design, Material UI, Bootstrap, Bulma, Materialize</li>
             <li>And play a bit with Figma...</li>
           </ul>
         </SidebarContent>
